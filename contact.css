@@ -361,6 +361,7 @@ footer {
     }
 }
 
+
 @media(max-width:768px) {
     .footer-container {
         max-width: 720px;
@@ -426,7 +427,7 @@ footer {
 
     .accordian {
         margin: 0;
-        width:  90%;
+        width:  85%;
         font-family: 'Poppins', sans-serif;
         padding: 0;
     }
