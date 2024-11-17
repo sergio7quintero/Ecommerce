@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+header:hover {
+    background-color: black;
+    transition: .5s ease-out;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header-left li img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.header-left li {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.header-left a, .header-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.header-right li i {
+    cursor: pointer;
+}
+
+#homePic {
+    max-width: 100%;
+    z-index: 0;
+    mask-image: linear-gradient(
+        rgb(0 0 0 / 1),
+        rgb(0 0 0 / .5) 90%,
+        rgb(0 0 0 / 0)
+    );
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 1%;
+}
+
+/* new releases css */
+.shoe-row {
+    display: flex;
+    justify-content: center;
+}
+
+.shoe-pics {
+    width: 350px;
+}
+
+.section-container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    width: 100px;
+    height: auto;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.shoe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin: 40px 20px 30px 20px;
+}   
+.description {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.shoe-price {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.ratings {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.buy {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 5%;
+    color: black;
+}
+
+.top-sold {
+    background: linear-gradient(to top, #363636 , #ffffff);
+}
+
+.black-background {
+    padding: 40px;
+}
+
+.gray-back-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-left: 250px;
+}
+.gray-back-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-right: 300px;
+}
+
+.gray-back-top h4, .gray-back-bottom h4 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.shop-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+
+}
+
+.pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panda-pic {
+    width: 500px;
+    border-radius: 30px;
+    border: 20px solid rgb(157, 157, 157);
+    margin-left: 100px;
+}
+
+.samba-pic {
+    width: 500px;
+    border-radius: 30px;
+    border: 20px solid rgb(157, 157, 157);
+    margin-right: 100px;
+}
+
+/* sale section css */
+
+.sales-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/salebackground.jpg) no-repeat center/cover;
+    margin: 0;
+    padding-top: 0;
+}
+
+h3 {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 100px 0;
+    color: rgb(255, 0, 0);
+}
+
+.shoe-card img {
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.old-price {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.new-price {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red
+}
+
+
+
+/* footer css start here */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+    width: calc(40% - 50px);
+    margin-right: 15px;
+}
+
+.yuyiLogo {
+    width: 80px;
+}
+
+.wrapper .footer-widget .yuyiLogo {
+    margin-bottom: 30px;
+    vertical-align: middle;
+
+}
+
+.wrapper .footer-widget p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.wrapper .footer-widget .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li {
+    list-style: none;
+}
+
+.wrapper .footer-widget .socials li a {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+.wrapper .footer-widget h6{
+    color: #000000;
+    margin: 10px 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper .footer-widget .links li{
+    list-style: none;
+}
+
+
+.wrapper .footer-widget .links li a {
+    color: #585978;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 32px;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .links li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.copyright-wrapper {
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, .4);
+}
+
+.copyright-wrapper p {
+    color: rgba(88, 89, 120, .6);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copyright-wrapper p a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.copyright-wrapper p a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* media query */
+
+@media(max-width:992px) {
+    .footer-container {
+        max-width: 960px;
+    }
+
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
+    }
+}
+
+@media(max-width:900px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-container {
+        max-width: 720px;
+    }
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: 100%;
+        margin: 0 10px 50px;
+    }
+    h1, h2 {
+        font-size: 26px;
+    }
+
+    .shoe-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shoe-card {
+        padding: 5px 0;
+    }
+
+    .shoe-pics {
+        width: 300px;
+    }
+
+    .top-sold {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pop h4 {
+        font-size: 20px;
+    }
+
+    .gray-back-top, .gray-back-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .panda-pic, .samba-pic {
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+

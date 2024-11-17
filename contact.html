@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<header>
+    <ul>
+        <div class="header-left">
+            <li><a href="index.html"><img src="images/yuyi-kicks-logo.png"></a></li>
+        </div>
+        <div class="header-right">
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><i class='bx bx-shopping-bag'></i></li>
+        </div>
+    </ul>
+
+</header>
+<body>
+    <div class="form-container">
+        <form id="contactForm">
+            <h1>Contact Us</h1>
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="mobile" placeholder="Mobile">
+                <h4>Leave your message here</h4>
+                <textarea id="message" placeholder="Your message"></textarea>
+                <input type="submit" value="send" id="button">
+        </form>
+    </div>
+
+    <section>
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <ul class="accordian">
+            <li>
+                <input type="radio" name="accordian" id="first" checked>
+                <label for="first">Are the sneakers authentic?</label>
+                <div class="content">
+                    <p>100% Authentic. We source all of our sneakers from reputable brands and suppliers. </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="second">
+                <label for="second">What payemts do you accept?</label>
+                    <div class="content">
+                        <p>We accept all major credit cards. Including Apple Pay and Google Pay. </p>
+                    </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="third">
+                <label for="third">What is your return policy?</label>
+                    <div class="content">
+                        <p>We do not accept returns. All of our sales are final. If you have any issues with your order please contact our customer serive team.</p>
+                    </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="fourth">
+                <label for="fourth">Do you ship international?</label>
+                <div class="content">
+                    <p>Yes, we will ship anywhere in the world. Shipping costs and delivery times may vary by location. For specific details please contact our customer service team.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="fifth">
+                <label for="fifth">How can I track my order?</label>
+                <div class="content">
+                    <p>Once your order has shipped, you will recieve an email with the tracking information.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordian" id="sixth">
+                <label for="sixth">Do you offer Gift Cards?</label>
+                <div class="content">
+                    <p>Yes, we offer gift cards in various denominations. They can be purchased on our website and are available for both physical and digital delivery.</p>
+                </div>
+            </li>
+        </ul>    
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="images/yuyilogo.png" class="yuyiLogo">
+                    </a>
+                    <p class="desc">
+                        Serving our customers since 2017 from all across the country, Yuyi Kicks is the #1 place to buy sneakers.
+                    </p>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.x.com" target="_blank">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com" target="_blank">
+                                <i class='bx bxl-tiktok'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Quick Links</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Support</h6>
+                    <ul class="links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Created and Designed by
+                    <a href="https://www.linkedin.com/in/sergio7quintero/" target="blank"> Sergio Quintero</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="product.js"></script>
+</body>
+</html>

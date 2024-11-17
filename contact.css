@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+header:hover {
+    background-color: black;
+    transition: .5s ease-out;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header-left li {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.header-left li img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.header-left a, .header-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.header-right li i {
+    cursor: pointer;
+}
+
+/* form css starts here */
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/black-laces.png) no-repeat center/cover;
+}
+
+.form-container form {
+    width: 670px;  
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.form-container form h1{
+    color: white;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.form-container form input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.form-container form input::placeholder{
+    color: white;
+}
+
+.form-container form #lastName, .form-container form #mobile {
+    margin-left: 20px;
+}
+
+.form-container form h4 {
+    color: white;
+    font-weight: 300;
+    /* width: 600px; */
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.form-container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 3ja00;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+
+.form-container form #button {
+    border: none;  
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    width: 300px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.form-container form #button:hover{
+    background: black;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+/* FAQ css starts here */
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+.accordian {
+    margin: 60px auto;
+    width: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordian li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(255, 255, 255, .7);
+}
+
+.accordian li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s, padding .5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+/* footer css below */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+    width: calc(40% - 50px);
+    margin-right: 15px;
+}
+
+.yuyiLogo {
+    width: 80px;
+}
+
+.wrapper .footer-widget .yuyiLogo {
+    margin-bottom: 30px;
+    vertical-align: middle;
+
+}
+
+.wrapper .footer-widget p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.wrapper .footer-widget .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li {
+    list-style: none;
+}
+
+.wrapper .footer-widget .socials li a {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+.wrapper .footer-widget h6{
+    color: #000000;
+    margin: 10px 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper .footer-widget .links li{
+    list-style: none;
+}
+
+
+.wrapper .footer-widget .links li a {
+    color: #585978;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 32px;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .links li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.copyright-wrapper {
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, .4);
+}
+
+.copyright-wrapper p {
+    color: rgba(88, 89, 120, .6);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copyright-wrapper p a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.copyright-wrapper p a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* media query */
+
+@media(max-width:992px) {
+    .footer-container {
+        max-width: 960px;
+    }
+
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
+    }
+}
+
+@media(max-width:768px) {
+    .footer-container {
+        max-width: 720px;
+    }
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: 100%;
+        margin: 0 10px 50px;
+    }
+
+    .form-container {
+        padding: 20px; 
+    }
+
+    .form-container form {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .form-container form h1 {
+        font-size: 28px; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    .form-container form input,
+    .form-container form textarea {
+        width: 100%; 
+        max-width: 100%; 
+        font-size: 18px; 
+    }
+
+    .form-container form input::placeholder {
+        font-size: 16px;
+    }
+
+    .form-container form #lastName,
+    .form-container form #mobile {
+        margin-left: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .form-container form textarea {
+        min-width: 100%; 
+        max-width: 100%; 
+        min-height: 120px; 
+    }
+
+    .form-container form #button {
+        width: 100%; 
+        font-size: 20px; 
+        height: 50px; 
+    }
+
+    .form-container form h4 {
+        font-size: 20px; 
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .accordian {
+        margin: 0;
+        width:  90%;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+    }
+}
+
+
+
+

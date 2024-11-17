@@ -1,0 +1,101 @@
+{
+    "shoes": [
+        {
+            "picture":"images/ow-j1.webp",
+            "shoe-name": "Off White x Air Jordan 1 'UNC'",
+            "shoe-description": "Jordan 1 High",
+            "shoe-price": "$1800"
+        },
+        {
+            "picture":"images/chicagoJ1.webp",
+            "shoe-name": "Trophy Room x Jordan 1 High 'Chicago'",
+            "shoe-description": "Jordan 1 high",
+            "shoe-price": "$1000"
+        },
+        {
+            "picture":"images/OWj4.webp",
+            "shoe-name": "Off White x Air Jordan 4 'Sail'",
+            "shoe-description": "Jordan 4",
+            "shoe-price": "$1800"
+        },
+        {
+            "picture":"images/TShigh.webp",
+            "shoe-name": "Travis Scott Jordan 1 High",
+            "shoe-description": "Jordan 1 High",
+            "shoe-price": "$1500"
+        },
+        {
+            "picture":"images/TSfrag.webp",
+            "shoe-name": "Fragment Design x Travis Scott x Jordan 1 Low",
+            "shoe-description": "Jordan 1 low",
+            "shoe-price": "$2200"
+        },
+        {
+            "picture":"images/TSreverse.webp",
+            "shoe-name": "Travis Scott x Jordan 1 Low 'Reverse Mocha'",
+            "shoe-description": "Jordan 1 low",
+            "shoe-price": "$1800"
+        },
+        {
+            "picture":"images/TSblack.webp",
+            "shoe-name": "Travis Scott x Jordan 1 Low 'Black Phantom",
+            "shoe-description": "Jordan 1 Low",
+            "shoe-price": "$1100"
+        },
+        {
+            "picture":"images/TSmocha.webp",
+            "shoe-name": "Travis Scott x Jordan 1 Low 'Mocha'",
+            "shoe-description": "Jordan 1 low",
+            "shoe-price": "$2300"
+        },
+        {
+            "picture":"images/aam-j3.webp",
+            "shoe-name": "A Ma Maniere x Air Jordan 3",
+            "shoe-description": "Air Jordan 3",
+            "shoe-price": "$450"
+        },
+        {
+            "picture":"images/seanCliver.webp",
+            "shoe-name": "Sean Cliver Nike SB Dunk Low",
+            "shoe-description": "Nike SB Dunk Low",
+            "shoe-price": "$500"
+        },
+        {
+            "picture":"images/strangelove.webp",
+            "shoe-name": "StrangeLove x SB Dunk Low 'Valentine's Day'",
+            "shoe-description": "Nike SB Dunk Low",
+            "shoe-price": "$1100"
+        },
+        {
+            "picture":"images/habibi.webp",
+            "shoe-name": "Frame Skate x SB Dunk Low",
+            "shoe-description": "Nike SB Dunk Low",
+            "shoe-price": "$900"
+        },
+        {
+            "picture":"images/pandadunk.jpeg",
+            "shoe-name": "Nike Dunk Low 'Panda'",
+            "shoe-description": "Nike Dunk Low",
+            "shoe-price": "$75"
+        },
+        {
+            "picture":"images/Adisamba.webp",
+            "shoe-name": "Adidas Samba Classic",
+            "shoe-description": "Adidas Samba",
+            "shoe-price": "$80"
+        },
+        {
+            "picture":"images/TSOlive.webp",
+            "shoe-name": "Travis Scott x Jordan 1 Low 'Reverse Olive'",
+            "shoe-description": "Jordan 1 Low",
+            "shoe-price": "$700"
+        },
+        {
+            "picture":"images/AF1.webp",
+            "shoe-name": "Nike Air Force 1",
+            "shoe-description": "Air Force 1",
+            "shoe-price": "$90"
+        }
+    ]
+}
+
